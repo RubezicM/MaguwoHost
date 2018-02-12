@@ -9,6 +9,7 @@ const plumber = require('gulp-plumber');
 const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require ('gulp-autoprefixer');
 const useref = require('gulp-useref');
+const htmlReplace = require('gulp-html-replace');
 
 // Paths to files
 var paths = {
@@ -18,7 +19,7 @@ var paths = {
 
     scripts:{
         js:[
-            'src/scripts/main.js'
+            'src/scripts/**/*.js'
         ]
     },
     images:[
@@ -42,9 +43,8 @@ gulp.task('sass',function(){
 
 
 // build styles
-gulp.task('styles', function() {
-    return gulp.src(paths.styles)
-        .pipe(sass().on('error',sass.logError))
+gulp.task('styles', ['sass'],function() {
+    return gulp.src('./src/css/**/*.css')
         .pipe(autoprefixer('last 5 versions'))
         .pipe(concat('main.css'))
         .pipe(cleanCSS({ removeEmpty: true }))
@@ -57,9 +57,10 @@ gulp.task('styles', function() {
 //build scripts
 gulp.task('scripts', function(){
     return gulp.src(paths.scripts.js)
-        .pipe(uglify())
-        .pipe(concat('minified.js'))
         .pipe(plumber())
+        .pipe(concat('main.min.js'))
+        //.pipe(uglify())
+        //.pipe(rename({suffix:".min"}))
         .pipe(gulp.dest('dist/scripts'))
         .pipe(browserSync.stream())
         .pipe(notify({ message:'scripts built'}));
@@ -75,12 +76,15 @@ gulp.task ('scripts:watch', function(){
 // move & compress images
 gulp.task('images', function() {
     return gulp.src(paths.images)
-        .pipe(gulp.dest('dist/images'));
+        .pipe(gulp.dest('dist/img'));
 
 });
 gulp.task('html',function(){
     return gulp.src(paths.html)
-        .pipe(useref())
+        .pipe(htmlReplace({
+            'css': 'css/main.css',
+            'js': 'scripts/main.min.js'
+        }))
         .pipe(gulp.dest('dist/'))
 });
 
@@ -101,7 +105,7 @@ gulp.task('serve', ['sass','watch'],function(){
 
 });
 
-gulp.task('build',['html','styles','scripts','images']);
+gulp.task('build',['html','scripts','styles','images']);
 
 
 gulp.task('default', ['watch','sass','scripts','serve']);
