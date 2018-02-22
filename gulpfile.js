@@ -98,7 +98,7 @@ gulp.task('watch',function(){
 });
 
 
-gulp.task('serve', ['sass','watch'],function(){
+gulp.task('serve', ['watch'],function(){
     browserSync.init({
         server: './src'
     });
