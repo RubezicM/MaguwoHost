@@ -1,0 +1,26 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-decoration: none;
+        display: inline-block;
+        outline: none;
+        border: none;
+        
+    }
+    &--yellow {
+        background-color: $color-secondary;
+    }
+    &--dark-text{
+        color:$color-primary;
+    }
+
+    &--small {
+        padding: 1.3rem 3.2rem;
+        font-size: 1.3rem;
+    }
+    &--bold {
+        font-weight: 700;
+    }
+
+}

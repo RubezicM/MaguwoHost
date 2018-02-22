@@ -1,0 +1,17 @@
+.logo-box {
+    &__image {
+       
+    }
+    &__text {
+        font-weight: 400;
+        display: inline-block;
+        font-size: 3rem;
+        margin-left: 1.2rem;
+        position: relative;
+        top: -.5rem;
+        span {
+            font-weight: bold;
+        }
+    }
+    
+}
