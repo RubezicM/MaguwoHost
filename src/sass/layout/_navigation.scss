@@ -1,0 +1,25 @@
+.header__navigation {
+    &-list {
+        list-style: none;
+        backface-visibility: hidden;
+    }
+
+    &-item {
+        display: inline-block;
+        margin-left: 2.5rem;
+        
+    }
+    &-link,
+    &-link:link,
+    &-link:visited {
+        font-size: 1.6rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-primary;
+        &:hover {
+            font-weight: 700;
+            color: $color-secondary;
+        }
+    }   
+
+}

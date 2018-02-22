@@ -10,26 +10,39 @@
    width: 100%;
    background-position: 100% 80%;
    position: relative;
+   color: $color-primary;
 
    &__top {
-    padding: 2rem;
-    background-color: rgba(255,255,255,.9)
+    padding: 3.5rem 0;
+    background-color: rgba(255,255,255,.95);
+   }
+   &__cta {
+
+    &-text {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 1.7rem;
+    }
+    &-number {
+        float: right;
+        display: inline-block;
+        padding: .5rem 0 .5rem 2rem;
+        font-size: 2.4rem;
+        font-weight: 700;
+        border-left: 1px solid rgba($color-primary,.3);
+    }
    }
 
-   &__logo-box {
-    
-   }
-   &__navigation {
-
-   }
-
-   &__navigation-list {
-
-   }
-   &__navigation-item {
-
-   }
-   &__navigation-link {
-
+   &__text-box{
+       width: 75%;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+       text-align: center;
+       &--img {
+        margin: 6rem auto;
+        display: block;
+       }
    }
 }
