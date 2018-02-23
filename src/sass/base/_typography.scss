@@ -5,6 +5,9 @@ body {
     color: $color-primary;
 }
 
+
+// Headings 
+
 .heading-primary {
     color: $color-white;
     //text-align: center;
@@ -19,5 +22,24 @@ body {
         font-size: 3rem;
         font-weight: 400;
         display: block;
+    }
+}
+
+.heading-secondary {
+    color: $color-white;
+    font-weight: 700;
+    font-family: $font-family-primary;
+    font-size: 3.6rem;
+    margin-bottom: 1rem;
+    letter-spacing: .2rem;
+}
+
+// Paragraphs
+
+.paragraph {
+    font-size: 1.4rem;
+    line-height: 1.65;
+    &--white {
+    color: $color-white;
     }
 }

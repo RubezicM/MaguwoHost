@@ -1,0 +1,21 @@
+.services {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    padding: 10rem 0;
+
+    &__figure {
+        margin-bottom: 5rem;
+    }
+    &__figure--text{
+        font-size: 13rem;
+        font-weight: 700;
+        display: block;
+    }
+    &__figure--image {
+
+    }
+    .paragraph {
+        margin-bottom: 3.5rem;
+    }
+}

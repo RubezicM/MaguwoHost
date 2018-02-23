@@ -6,21 +6,35 @@
         display: inline-block;
         outline: none;
         border: none;
-        
+        transition: all .3s;
+        position: relative;
+
+        &:hover {
+            box-shadow: 0 1rem 1rem rgba(0,0,0,.15);
+            transform: translateY(-1px);
+        }
     }
     &--yellow {
         background-color: $color-secondary;
     }
-    &--dark-text{
-        color:$color-primary;
-    }
+
 
     &--small {
         padding: 1.3rem 3.2rem;
         font-size: 1.3rem;
     }
-    &--bold {
-        font-weight: 700;
+    &--medium {
+        padding: 1.5rem 5rem;
+        font-size: 1.8rem;
+    }
+    
+    &--transparent {
+        border: 3px solid $color-white !important;
+
+        &:hover {
+            background-color: $color-white;
+            color: $color-primary;
+        }
     }
 
 }

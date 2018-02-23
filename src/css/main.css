@@ -50,6 +50,20 @@ body {
     font-weight: 400;
     display: block; }
 
+.heading-secondary {
+  color: #fff;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  font-size: 3.6rem;
+  margin-bottom: 1rem;
+  letter-spacing: .2rem; }
+
+.paragraph {
+  font-size: 1.4rem;
+  line-height: 1.65; }
+  .paragraph--white {
+    color: #fff; }
+
 .u-background--yellow {
   background-color: #FFE13D; }
 
@@ -59,6 +73,9 @@ body {
 .u-text--dark {
   color: #1F2141; }
 
+.u-text--light {
+  color: #fff; }
+
 .u-padding--medium {
   padding: 1.5rem 3rem; }
 
@@ -66,20 +83,29 @@ body {
   text-decoration: none;
   display: inline-block;
   outline: none;
-  border: none; }
+  border: none;
+  transition: all .3s;
+  position: relative; }
+  .btn:hover, .btn:link:hover, .btn:visited:hover {
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px); }
 
 .btn--yellow {
   background-color: #FFE13D; }
-
-.btn--dark-text {
-  color: #1F2141; }
 
 .btn--small {
   padding: 1.3rem 3.2rem;
   font-size: 1.3rem; }
 
-.btn--bold {
-  font-weight: 700; }
+.btn--medium {
+  padding: 1.5rem 5rem;
+  font-size: 1.8rem; }
+
+.btn--transparent {
+  border: 3px solid #fff !important; }
+  .btn--transparent:hover {
+    background-color: #fff;
+    color: #1F2141; }
 
 .hosting-check {
   position: relative;
@@ -119,6 +145,29 @@ body {
   top: -.5rem; }
   .logo-box__text span {
     font-weight: bold; }
+
+.services {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  padding: 10rem 0; }
+  .services__figure {
+    margin-bottom: 5rem; }
+  .services__figure--text {
+    font-size: 13rem;
+    font-weight: 700;
+    display: block; }
+  .services .paragraph {
+    margin-bottom: 3.5rem; }
+
+.split-panel {
+  width: 50%;
+  float: left;
+  height: 75vh; }
+  .split-panel--blue {
+    background-color: #1F2141; }
+  .split-panel--yellow {
+    background-color: #FFE13D; }
 
 .flex-container {
   display: flex;
@@ -218,3 +267,8 @@ body {
   .header__navigation-link:hover, .header__navigation-link:link:hover, .header__navigation-link:visited:hover {
     font-weight: 700;
     color: #FFE13D; }
+
+.section-services:after {
+  content: "";
+  display: table;
+  clear: both; }

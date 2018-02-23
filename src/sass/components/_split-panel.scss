@@ -1,0 +1,11 @@
+.split-panel {
+    width: 50%;
+    float: left;
+    height: 75vh;
+    &--blue {
+        background-color: $color-primary;
+    }
+    &--yellow {
+        background-color: $color-secondary;
+    }
+}
