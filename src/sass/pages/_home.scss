@@ -3,3 +3,11 @@
     @include clearfix;
     
 }
+.section-features {
+    background-image: url('../img/features-bg.png');
+    //background-size: contain;
+    background-color: rgba(#FAF7F1,.5);
+    background-repeat: no-repeat;
+    background-position:50% 100%;
+    padding: 10rem 0;
+}
