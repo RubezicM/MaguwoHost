@@ -8,6 +8,30 @@
     //background-size: contain;
     background-color: rgba(#FAF7F1,.5);
     background-repeat: no-repeat;
-    background-position:50% 100%;
+    background-position:50% 122%;
     padding: 10rem 0;
+}
+
+.section-testimonials {
+    padding: 10rem 0;
+}
+
+// Testimonial boxes
+
+.clients {
+    &__heading--sub {
+        color: $color-gray;
+        font-size: 1.6rem;
+    }
+    &__logo-box{
+    display: flex;
+    justify-content: space-between;
+    }
+    &__heading {
+
+        p {
+            color: $color-gray;
+            font-size: 1.6rem;
+        }
+    }
 }

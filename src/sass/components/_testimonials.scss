@@ -1,0 +1,25 @@
+.testimonial {
+    background-color: $color-gray-light;
+    padding: 2.5rem;
+    position: relative;
+
+    &__text {
+        color: #A4A4A4;
+        font-family: $font-family-secondary;
+        font-size: 1.4rem;
+        font-style: italic;
+    }
+    &__name {
+        font-size: 1.6rem;
+        font-weight: 700;
+        display: block;
+        margin-top: 2rem;
+        color: #696969;
+    }
+    &__picture {
+        position: absolute;
+        right: 20px;
+        bottom: -50px;
+        
+    }
+}
