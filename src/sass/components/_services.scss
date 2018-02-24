@@ -1,11 +1,18 @@
 .services {
     margin: 0 auto;
-    width: 50%;
+    width: 60%;
     text-align: center;
     padding: 10rem 0;
 
+    @include respond(tab-port){
+        padding: 5rem 0;
+        width: 70%;
+    }
     &__figure {
         margin-bottom: 5rem;
+        @include respond(tab-port){
+            margin-bottom: 3rem;
+        }
     }
     &__figure--text{
         font-size: 13rem;
@@ -13,7 +20,9 @@
         display: block;
     }
     &__figure--image {
-
+        @include respond(tab-port){
+          width: 14rem;
+        }
     }
     .paragraph {
         margin-bottom: 3.5rem;

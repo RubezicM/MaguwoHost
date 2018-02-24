@@ -13,5 +13,8 @@
             font-weight: bold;
         }
     }
+    @include respond(tab-port){
+        margin-right: 6rem;
+    }
     
 }

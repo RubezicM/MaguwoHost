@@ -11,10 +11,21 @@
    background-position: 100% 80%;
    position: relative;
    color: $color-primary;
+    @include respond(tab-port){
+        background-position: 70% 80%;
+    }
+    @include respond(phone){
 
+    }
    &__top {
     padding: 3.5rem 2rem;
     background-color: rgba(255,255,255,.95);
+    @include respond(tab-port){
+        position: fixed;
+        width: 100%;
+        z-index: 9999;
+        padding: 2.5rem 0;
+    }
    }
    &__cta {
 
@@ -31,6 +42,10 @@
         font-weight: 700;
         border-left: 1px solid rgba($color-primary,.3);
     }
+
+    @include respond(phone){
+        display: none;
+    }
    }
 
    &__text-box{
@@ -44,6 +59,9 @@
         margin: 6rem auto;
         display: block;
         width: 9rem;
+        @include respond(tab-port){
+            width: 6rem;
+        }
        }
    }
 }

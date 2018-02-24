@@ -2,8 +2,15 @@
     display: flex;
     max-width: $grid-width;
     margin: 0 auto;
+    @include respond (tab-port){
+        max-width: 80rem;
+        padding: 0 3rem;
+    }
     &--streched {
         justify-content: space-between;
         align-items: center;
+        @include respond(tab-port){
+            justify-content: unset;
+        }
     }
 }
