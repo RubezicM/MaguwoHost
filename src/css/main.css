@@ -33,9 +33,6 @@ html {
   @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media (min-width: 112.5em) {
-    html {
-      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -214,12 +211,15 @@ body {
     display: table;
     clear: both; }
   .hosting-check > * {
-    border: none;
     outline: none;
     float: left;
     height: 5.5rem; }
-  .hosting-check__input::-webkit-input-placeholder {
-    color: #1F2141; }
+  .hosting-check__input {
+    border: 3px solid transparent; }
+    .hosting-check__input::-webkit-input-placeholder {
+      color: #1F2141; }
+    .hosting-check__input:focus {
+      border: 3px solid #FFE13D; }
   .hosting-check__domain {
     font-size: 1.6rem;
     font-weight: 700;
@@ -423,7 +423,7 @@ body {
   position: relative;
   color: #1F2141; }
   .header__top {
-    padding: 3.5rem 0;
+    padding: 3.5rem 2rem;
     background-color: rgba(255, 255, 255, 0.95); }
   .header__cta-text {
     font-size: 1.2rem;
@@ -445,7 +445,8 @@ body {
     text-align: center; }
     .header__text-box--img {
       margin: 6rem auto;
-      display: block; }
+      display: block;
+      width: 9rem; }
 
 .header__navigation-list {
   list-style: none;
@@ -470,10 +471,10 @@ body {
   clear: both; }
 
 .section-features {
-  background-image: url("../img/features-bg.png");
+  background-image: url("../img/Untitled-19.png");
   background-color: rgba(250, 247, 241, 0.5);
   background-repeat: no-repeat;
-  background-position: 50% 122%;
+  background-position: 50% 65%;
   padding: 10rem 0; }
 
 .section-testimonials {

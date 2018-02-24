@@ -13,7 +13,7 @@
    color: $color-primary;
 
    &__top {
-    padding: 3.5rem 0;
+    padding: 3.5rem 2rem;
     background-color: rgba(255,255,255,.95);
    }
    &__cta {
@@ -43,6 +43,7 @@
        &--img {
         margin: 6rem auto;
         display: block;
+        width: 9rem;
        }
    }
 }
