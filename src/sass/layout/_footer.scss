@@ -1,0 +1,22 @@
+.footer {
+    &__cta {
+        background-color: $color-primary;
+        padding: 7rem 0;
+
+        @include clearfix;
+&-heading {
+    color: $color-white;
+    display: inline-block;
+}
+
+        &-btn {
+            &,
+            &:active,
+            &:focus {
+                color: $color-primary;
+            }
+            border: 5px solid $color-white !important;
+            float: right;
+        }
+    }
+}

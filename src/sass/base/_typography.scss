@@ -1,7 +1,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.3;
     color: $color-primary;
 }
 
@@ -33,13 +33,25 @@ body {
     margin-bottom: 1rem;
     letter-spacing: .2rem;
 
+    span {
+        display: block;
+        letter-spacing: 0em;
+        font-weight: 400;
+        line-height: 1.6;
+        margin-top: 1rem;
+    }
+    
+    &--white {
+        color: $color-white;
+    }
 
-    &--sub {
+    &__sub--gray1-medium {
         color: $color-gray;
         font-size: 1.6rem;
     }
-    &--white {
-        color: $color-white;
+    &__sub--gray2-large {
+        color: $color-gray-dark;
+        font-size: 1.8rem;
     }
 }
 
