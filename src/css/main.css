@@ -27,6 +27,15 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -101,6 +110,18 @@ body {
 
 .u-padding--medium {
   padding: 1.5rem 3rem; }
+
+.back-to-top {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-top: 6rem;
+  text-align: right;
+  cursor: pointer;
+  padding-left: 1rem; }
+  .back-to-top__arrow {
+    margin-right: 1rem;
+    display: inline-block;
+    font-size: 2rem; }
 
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
@@ -275,7 +296,7 @@ body {
 
 .footer__cta {
   background-color: #1F2141;
-  padding: 7rem 0; }
+  padding: 8rem 0; }
   .footer__cta:after {
     content: "";
     display: table;
@@ -288,6 +309,69 @@ body {
     float: right; }
     .footer__cta-btn, .footer__cta-btn:active, .footer__cta-btn:focus {
       color: #1F2141; }
+
+.footer__info {
+  background-color: rgba(31, 33, 65, 0.8);
+  padding: 8rem 0 6rem 0; }
+
+.footer__info--wrapper {
+  background-image: url("../../img/Vector Smart Object.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  position: relative;
+  padding-bottom: 8.5rem; }
+  .footer__info--wrapper:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.footer__nav {
+  float: right;
+  margin-top: 3rem; }
+  .footer__nav-heading {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 700; }
+  .footer__nav-list {
+    text-align: right;
+    padding: 2rem 0 2rem 2rem;
+    list-style: none; }
+  .footer__nav-item {
+    padding: .8rem 0rem 1.2rem 1.3rem; }
+    .footer__nav-item:not(:last-of-type) {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+  .footer__nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6rem; }
+  .footer__nav-social {
+    display: flex;
+    justify-content: space-around; }
+  .footer__nav-social--item {
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 1rem 1rem rgba(31, 33, 65, 0.2); }
+    .footer__nav-social--item:hover {
+      transform: translateY(-1px);
+      backface-visibility: hidden; }
+
+.footer__credentials {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%); }
+
+.footer__logo {
+  width: 3rem;
+  margin-bottom: 1rem; }
+
+.footer__credentials-info {
+  font-size: 1.4rem;
+  color: #fff;
+  display: block; }
 
 .row {
   max-width: 117rem;

@@ -1,7 +1,7 @@
 .footer {
     &__cta {
         background-color: $color-primary;
-        padding: 7rem 0;
+        padding: 8rem 0;
 
         @include clearfix;
 &-heading {
@@ -18,5 +18,77 @@
             border: 5px solid $color-white !important;
             float: right;
         }
+    }
+    &__info {
+        background-color: rgba($color-primary, .8);
+        padding: 8rem 0 6rem 0;
+    }
+    &__info--wrapper {
+        background-image: url('../../img/Vector Smart Object.png');
+        background-repeat: no-repeat;
+        background-position: left center;
+        position: relative;
+        padding-bottom: 8.5rem;
+        @include clearfix;
+    }
+    &__nav {
+        float: right;
+        margin-top: 3rem;
+
+        &-heading {
+            font-size: 1.8rem;
+            color: $color-white;
+            font-weight: 700;
+        }
+        &-list {
+            text-align: right;
+            padding: 2rem 0 2rem 2rem;
+            list-style: none;
+        }
+        &-item {
+            padding: .8rem 0rem 1.2rem 1.3rem;
+
+            &:not(:last-of-type){
+                border-bottom: 1px solid rgba($color-white, .2);
+            }
+           
+        }
+        &-link {
+            text-decoration: none;
+            color: $color-white;
+            font-size: 1.6rem;
+        }
+        &-social {
+            display: flex;
+            justify-content: space-around;
+        }
+        &-social--item {
+            cursor: pointer;
+            position: relative;
+            box-shadow: 0 1rem 1rem rgba($color-primary, .2);
+            &:hover {
+                transform: translateY(-1px);
+                backface-visibility: hidden;
+            }
+        }
+    }
+    &__credentials {
+        width: 30%;
+        margin: 0 auto;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+
+    }
+    &__logo {
+       width: 3rem;    
+       margin-bottom: 1rem;    
+    }
+    &__credentials-info {
+        font-size: 1.4rem;
+        color: $color-white;
+        display: block;
     }
 }
