@@ -10,10 +10,22 @@
     background-repeat: no-repeat;
     background-position:50% 65%;
     padding: 10rem 0;
+
+    @include respond(tab-port){
+        background-image: none;
+        padding: 5rem 0;
+
+        & .heading-tertiary {
+            margin-bottom: 3.5rem;
+        }
+    }
 }
 
 .section-testimonials {
     padding: 12rem 0;
+    @include respond(tab-port){
+        padding: 5rem 0;
+    }
 }
 
 // Testimonial boxes
@@ -23,8 +35,17 @@
         
     }
     &__logo-box{
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
+    
+    }
+    &__image {
+        &:not(:last-of-type){
+            margin-right: 2rem;
+        }
+        @include respond(tab-port){
+            width: 30%;
+        }
+        
     }
     &__heading {
 

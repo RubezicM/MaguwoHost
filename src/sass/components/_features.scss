@@ -3,6 +3,12 @@
     padding: 0 .7rem;
     margin-top: 12rem;
     
+    @include respond(tab-port){
+        margin-top: 0;
+        background-color: $color-white;
+        padding: 4rem 6.5rem;
+        box-shadow: 0 2.3rem 4rem rgba($color-primary, 0.05);
+    }
     &__figure {
         padding-bottom: 3.5rem;
         position: relative;

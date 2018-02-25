@@ -2,7 +2,11 @@
     background-color: $color-gray-light;
     padding: 2.5rem;
     position: relative;
-
+    @include respond(tab-port){
+        &:not(:last-of-type){
+            display: none;
+        }
+    }
     &__text {
         color: #A4A4A4;
         font-family: $font-family-secondary;

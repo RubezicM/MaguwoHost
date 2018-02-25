@@ -167,6 +167,10 @@ body {
   padding: 2rem 6.5rem;
   font-size: 1.8rem;
   font-weight: 700; }
+  @media (max-width: 56.25em) {
+    .btn--large {
+      padding: 1.5rem 4rem;
+      font-size: 1.5rem; } }
 
 .btn--transparent {
   border: 3px solid #fff !important; }
@@ -178,6 +182,12 @@ body {
   text-align: center;
   padding: 0 .7rem;
   margin-top: 12rem; }
+  @media (max-width: 56.25em) {
+    .features {
+      margin-top: 0;
+      background-color: #fff;
+      padding: 4rem 6.5rem;
+      box-shadow: 0 2.3rem 4rem rgba(31, 33, 65, 0.05); } }
   .features__figure {
     padding-bottom: 3.5rem;
     position: relative;
@@ -318,6 +328,9 @@ body {
   background-color: #F4F3F3;
   padding: 2.5rem;
   position: relative; }
+  @media (max-width: 56.25em) {
+    .testimonial:not(:last-of-type) {
+      display: none; } }
   .testimonial__text {
     color: #A4A4A4;
     font-family: "Kameron", serif;
@@ -356,18 +369,34 @@ body {
     content: "";
     display: table;
     clear: both; }
+  @media (max-width: 56.25em) {
+    .footer__cta {
+      padding: 3.5rem 0; } }
   .footer__cta-heading {
     color: #fff;
     display: inline-block; }
+    @media (max-width: 56.25em) {
+      .footer__cta-heading {
+        font-size: 2rem;
+        width: 55%;
+        float: left; } }
+    .footer__cta-heading span {
+      font-size: 1.4rem; }
   .footer__cta-btn {
     border: 5px solid #fff !important;
     float: right; }
     .footer__cta-btn, .footer__cta-btn:active, .footer__cta-btn:focus {
       color: #1F2141; }
+    @media (max-width: 56.25em) {
+      .footer__cta-btn {
+        top: 1.5rem; } }
 
 .footer__info {
   background-color: rgba(31, 33, 65, 0.8);
   padding: 8rem 0 6rem 0; }
+  @media (max-width: 56.25em) {
+    .footer__info {
+      padding: 2rem; } }
 
 .footer__info--wrapper {
   background-image: url("../../img/Vector Smart Object.png");
@@ -379,10 +408,17 @@ body {
     content: "";
     display: table;
     clear: both; }
+  @media (max-width: 56.25em) {
+    .footer__info--wrapper {
+      padding: 0;
+      background-image: none; } }
 
 .footer__nav {
   float: right;
   margin-top: 3rem; }
+  @media (max-width: 56.25em) {
+    .footer__nav {
+      display: none; } }
   .footer__nav-heading {
     font-size: 1.8rem;
     color: #fff;
@@ -418,18 +454,35 @@ body {
   left: 50%;
   bottom: 0;
   transform: translateX(-50%); }
+  @media (max-width: 56.25em) {
+    .footer__credentials {
+      width: auto;
+      position: static;
+      transform: none;
+      text-align: left; } }
 
 .footer__logo {
   width: 3rem;
   margin-bottom: 1rem; }
+  @media (max-width: 56.25em) {
+    .footer__logo {
+      display: inline-block;
+      margin-bottom: 0;
+      margin-right: 2rem; } }
 
 .footer__credentials-info {
   font-size: 1.4rem;
   color: #fff;
   display: block; }
+  @media (max-width: 56.25em) {
+    .footer__credentials-info {
+      display: inline-block;
+      position: relative;
+      top: -6px; } }
 
 .row {
   max-width: 117rem;
+  padding: 0 3rem;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
@@ -444,6 +497,9 @@ body {
     content: "";
     display: table;
     clear: both; }
+  @media (max-width: 56.25em) {
+    .row [class~="hidden-small"] {
+      display: none; } }
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
@@ -657,13 +713,28 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 65%;
   padding: 10rem 0; }
+  @media (max-width: 56.25em) {
+    .section-features {
+      background-image: none;
+      padding: 5rem 0; }
+      .section-features .heading-tertiary {
+        margin-bottom: 3.5rem; } }
 
 .section-testimonials {
   padding: 12rem 0; }
+  @media (max-width: 56.25em) {
+    .section-testimonials {
+      padding: 5rem 0; } }
 
 .clients__logo-box {
-  display: flex;
-  justify-content: space-between; }
+  text-align: center; }
+
+.clients__image:not(:last-of-type) {
+  margin-right: 2rem; }
+
+@media (max-width: 56.25em) {
+  .clients__image {
+    width: 30%; } }
 
 .clients__heading p {
   color: #ACACAC;
