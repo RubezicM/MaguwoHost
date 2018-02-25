@@ -13,24 +13,23 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__top">
-            <div class="flex-container flex-container--streched">
+    <div class="header__top">
+        <div class="flex-container flex-container--streched">
 
-                <div class="logo-box">
-                    <img src="img/nav-shape.png" alt="Maguwo Host" class="logo-box__image">
-                    <h2 class="logo-box__text">Maguwo
-                        <span>Host</span>
-                    </h2>
-                </div>
-                <div class="navigation">
-                        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            <div class="logo-box">
+                <img src="img/nav-shape.png" alt="Maguwo Host" class="logo-box__image">
+                <h2 class="logo-box__text">Maguwo
+                    <span>Host</span>
+                </h2>
+            </div>
+            <div class="navigation">
+                <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
-                        <label for="navi-toggle" class="navigation__button">
-                            <span class="navigation__icon">&nbsp;</span>
-                            
-                        </label>
-                
+                <label for="navi-toggle" class="navigation__button">
+                    <span class="navigation__icon">&nbsp;</span>
+
+                </label>
+
                 <nav class="header__navigation">
                     <ul class="header__navigation-list">
                         <li class="header__navigation-item">
@@ -49,15 +48,18 @@
                             <a href="#" class="header__navigation-link">Hosting</a>
                         </li>
                     </ul>
+                    <img src="img/logo-big.png" alt="Maguwo Host Big Logo" class="header__navigation-image">
                 </nav>
-                </div>
-                <div class="header__cta">
-                    <p class="header__cta-text">Do you need help ? Just Email, Live chat or Call us</p>
-                    <a href="#" class="btn u-background--yellow btn--small u-text--dark u-font--bold">Live Chat</a>
-                    <p class="header__cta-number">6284-6534</p>
-                </div>
+            </div>
+            <div class="header__cta">
+                <p class="header__cta-text">Do you need help ? Just Email, Live chat or Call us</p>
+                <a href="#" class="btn u-background--yellow btn--small u-text--dark u-font--bold">Live Chat</a>
+                <p class="header__cta-number">6284-6534</p>
             </div>
         </div>
+    </div>
+    <header class="header">
+
         <div class="row">
             <div class="header__text-box">
                 <h1 class="heading-primary">
@@ -243,7 +245,9 @@
             </div>
         </footer>
     </main>
+
     <!--build:js -->
+    <script src="scripts/jquery.min.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
 </body>

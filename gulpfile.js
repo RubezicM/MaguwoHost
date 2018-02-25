@@ -70,8 +70,7 @@ gulp.task('scripts', function(){
 
 gulp.task ('scripts:watch', function(){
     return gulp.src(paths.scripts.js)
-    .pipe(browserSync.stream())
-    .pipe(notify({message: 'scripts watched'}));
+    .pipe(browserSync.stream());
 })
 // move & compress images
 gulp.task('images', function() {

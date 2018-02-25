@@ -26,4 +26,12 @@ html {
 
 body {
     box-sizing: border-box;
+    position: relative;
+
+    // navigation functionality 
+    transition: all .4s;
+}
+
+.nav-open .header__top {
+    background-color: rgba($color-white,1); 
 }
