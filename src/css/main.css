@@ -211,6 +211,9 @@ body {
   .features__icon {
     transition: all .5s;
     transform: scale(0.9); }
+    @media (max-width: 56.25em) {
+      .features__icon {
+        width: 103px; } }
   .features__shadow {
     transition: all .5s;
     width: 128px;
@@ -222,6 +225,10 @@ body {
     top: 0;
     right: 50%;
     transform: translateX(50%); }
+    @media (max-width: 56.25em) {
+      .features__shadow {
+        width: 103px;
+        height: 103px; } }
   .features__heading {
     font-size: 3rem;
     color: #FFE13D;
@@ -233,44 +240,54 @@ body {
     line-height: 1.7; }
 
 .hosting-check {
-  position: relative;
   border: 2rem solid rgba(255, 255, 255, 0.5);
-  display: inline-block;
-  text-align: center; }
+  display: inline-block; }
   .hosting-check:after {
     content: "";
     display: table;
     clear: both; }
-  @media (max-width: 37.5em) {
-    .hosting-check {
-      width: 100%; } }
   .hosting-check > * {
     outline: none;
     float: left;
     height: 5.5rem; }
   .hosting-check__input {
     border: 3px solid transparent;
-    padding: 2rem 5rem 2rem 1rem;
-    width: 50%; }
+    padding: 0 5rem; }
     .hosting-check__input::-webkit-input-placeholder {
       color: #1F2141; }
     .hosting-check__input:focus {
       border: 3px solid #FFE13D; }
+    @media (max-width: 56.25em) {
+      .hosting-check__input {
+        padding: 0 3rem; } }
+    @media (max-width: 37.5em) {
+      .hosting-check__input {
+        padding: 0 .5rem; } }
   .hosting-check__domain {
     font-size: 1.6rem;
     font-weight: 700;
     text-decoration: none;
     line-height: 1.75;
     padding: 1.5rem 3.5rem 1.5rem 2rem;
-    color: #2D2D2D;
-    width: 20%; }
+    color: #2D2D2D; }
+    @media (max-width: 56.25em) {
+      .hosting-check__domain {
+        padding: 1.5rem 3rem 1.5rem 1.5rem; } }
+    @media (max-width: 37.5em) {
+      .hosting-check__domain {
+        padding: 1.5rem; } }
   .hosting-check__btn {
     color: #fff;
     font-size: 1.4rem;
     font-weight: bold;
     border-left: 1px solid #fff;
-    width: 30%;
-    padding: 1.5rem 5rem; }
+    padding: 1.5rem 3.75rem; }
+    @media (max-width: 56.25em) {
+      .hosting-check__btn {
+        padding: 1.5rem 2.75rem; } }
+    @media (max-width: 37.5em) {
+      .hosting-check__btn {
+        padding: 1.5rem 1.2rem; } }
 
 .logo-box__text {
   font-weight: 400;
@@ -288,15 +305,16 @@ body {
 
 .services {
   margin: 0 auto;
-  width: 60%;
+  width: 67%;
   text-align: center;
   padding: 10rem 0; }
   @media (max-width: 56.25em) {
     .services {
       padding: 5rem 0;
-      width: 70%; } }
+      max-width: 60rem; } }
   .services__figure {
-    margin-bottom: 5rem; }
+    margin-bottom: 5rem;
+    height: 19rem; }
     @media (max-width: 56.25em) {
       .services__figure {
         margin-bottom: 3rem; } }
@@ -304,16 +322,21 @@ body {
     font-size: 13rem;
     font-weight: 700;
     display: block; }
+    @media (max-width: 37.5em) {
+      .services__figure--text {
+        font-size: 10.5rem; } }
   @media (max-width: 56.25em) {
     .services__figure--image {
       width: 14rem; } }
+  @media (max-width: 37.5em) {
+    .services__figure--image {
+      width: 10.5rem; } }
   .services .paragraph {
     margin-bottom: 3.5rem; }
 
 .split-panel {
   width: 50%;
-  float: left;
-  height: 75vh; }
+  float: left; }
   .split-panel--blue {
     background-color: #1F2141; }
   .split-panel--yellow {
@@ -329,12 +352,12 @@ body {
   padding: 2.5rem;
   position: relative; }
   @media (max-width: 56.25em) {
-    .testimonial:not(:last-of-type) {
-      display: none; } }
+    .testimonial {
+      margin-bottom: 2rem; } }
   .testimonial__text {
     color: #A4A4A4;
     font-family: "Kameron", serif;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-style: italic; }
   .testimonial__name {
     font-size: 1.6rem;
@@ -346,6 +369,10 @@ body {
     position: absolute;
     right: 20px;
     bottom: -50px; }
+    @media (max-width: 56.25em) {
+      .testimonial__picture {
+        width: 11rem;
+        bottom: -40px; } }
 
 .flex-container {
   display: flex;
@@ -566,6 +593,10 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+    @media (max-width: 56.25em) {
+      .header__text-box {
+        width: 100%;
+        max-width: 60rem; } }
     .header__text-box--img {
       margin: 6rem auto;
       display: block;
@@ -724,7 +755,7 @@ body {
   padding: 12rem 0; }
   @media (max-width: 56.25em) {
     .section-testimonials {
-      padding: 5rem 0; } }
+      padding: 5rem 0 7rem 0; } }
 
 .clients__logo-box {
   text-align: center; }

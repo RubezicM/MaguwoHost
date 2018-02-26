@@ -1,27 +1,35 @@
 .services {
     margin: 0 auto;
-    width: 60%;
+    width: 67%;
     text-align: center;
     padding: 10rem 0;
 
     @include respond(tab-port){
         padding: 5rem 0;
-        width: 70%;
+        max-width: 60rem;
     }
     &__figure {
         margin-bottom: 5rem;
+        height: 19rem;
         @include respond(tab-port){
             margin-bottom: 3rem;
+            
         }
     }
     &__figure--text{
         font-size: 13rem;
         font-weight: 700;
         display: block;
+        @include respond(phone){
+            font-size: 10.5rem;
+        }
     }
     &__figure--image {
         @include respond(tab-port){
           width: 14rem;
+        }
+        @include respond(phone){
+            width: 10.5rem;
         }
     }
     .paragraph {

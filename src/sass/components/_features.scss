@@ -39,6 +39,9 @@
     //-moz-perspective: 150rem;
     transition: all .5s;
     transform: scale(.9);
+    @include respond(tab-port){
+        width: 103px;
+    }
     }
     &__shadow {
         //perspective: 150rem;
@@ -54,6 +57,10 @@
         top: 0;
         right: 50%;
         transform: translateX(50%);
+        @include respond(tab-port){
+            width: 103px;
+            height: 103px;
+        }
     }
     &__heading{
         font-size: 3rem;
