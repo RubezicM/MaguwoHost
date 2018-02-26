@@ -262,7 +262,8 @@ body {
         padding: 0 3rem; } }
     @media (max-width: 37.5em) {
       .hosting-check__input {
-        padding: 0 .5rem; } }
+        padding: 0 0 0 .5rem;
+        max-width: 150px; } }
   .hosting-check__domain {
     font-size: 1.6rem;
     font-weight: 700;

@@ -29,7 +29,8 @@
             padding: 0 3rem;
         }
         @include respond(phone){
-            padding: 0 .5rem;
+            padding: 0 0 0 .5rem;
+            max-width: 150px;
         }
     }
     &__domain {
