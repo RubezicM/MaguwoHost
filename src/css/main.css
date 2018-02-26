@@ -317,7 +317,8 @@ body {
     height: 19rem; }
     @media (max-width: 56.25em) {
       .services__figure {
-        margin-bottom: 3rem; } }
+        margin-bottom: 3rem;
+        height: auto; } }
   .services__figure--text {
     font-size: 13rem;
     font-weight: 700;

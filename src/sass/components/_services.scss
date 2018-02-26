@@ -13,6 +13,7 @@
         height: 19rem;
         @include respond(tab-port){
             margin-bottom: 3rem;
+            height: auto;
             
         }
     }
