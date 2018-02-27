@@ -635,7 +635,15 @@ body {
     font-size: 1.6rem;
     text-decoration: none;
     text-transform: uppercase;
-    color: #1F2141; }
+    color: #1F2141;
+    display: inline-block; }
+    .header__navigation-link::after, .header__navigation-link:link::after, .header__navigation-link:visited::after {
+      content: attr(data-text);
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      height: 0;
+      font-weight: 700; }
     .header__navigation-link:hover, .header__navigation-link:link:hover, .header__navigation-link:visited:hover {
       font-weight: 700;
       color: #FFE13D; }

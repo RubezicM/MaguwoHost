@@ -36,6 +36,16 @@
         text-decoration: none;
         text-transform: uppercase;
         color: $color-primary;
+        display: inline-block;
+
+        &::after {
+            content: attr(data-text);
+            display: block;
+            overflow: hidden;
+            visibility: hidden;
+            height: 0;
+            font-weight: 700;
+        }
         &:hover {
             font-weight: 700;
             color: $color-secondary;
