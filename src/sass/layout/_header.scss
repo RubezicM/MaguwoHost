@@ -11,6 +11,11 @@
    background-position: 100% 80%;
    position: relative;
    color: $color-primary;
+   scroll-behavior: smooth;
+
+   &:target {
+       transition: all .5s;
+   }
     @include respond(tab-port){
         background-position: 70% 80%;
     }

@@ -37,6 +37,7 @@ gulp.task('sass',function(){
     return gulp.src(['src/sass/**/*.scss'])
         .pipe(sass()).on('error', sass.logError)
         //.pipe(cleanCSS({removeEmpty: true}))
+        .pipe(autoprefixer('last 5 versions'))
         .pipe(gulp.dest('src/css'))
         .pipe(browserSync.stream());
 });
