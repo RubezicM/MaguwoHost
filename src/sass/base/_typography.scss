@@ -17,10 +17,11 @@ body {
         font-weight: 400;
         font-family: $font-family-secondary;
 
-        @include respond(tab-port) {
-            line-height: 1.4;
+        @include respond(tab-land){
             font-size: 4.2rem;
+            line-height: 1.4;
         }
+
         @include respond(phone){
             font-size: 3.2rem;
             line-height: 1.3;
@@ -48,7 +49,7 @@ body {
     
     font-weight: 700;
     font-family: $font-family-primary;
-    font-size: 3.6rem;
+    font-size: 3.5rem;
     margin-bottom: 1rem;
     letter-spacing: .2rem;
 

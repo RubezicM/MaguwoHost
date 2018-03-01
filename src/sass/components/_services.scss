@@ -3,7 +3,9 @@
     width: 67%;
     text-align: center;
     padding: 10rem 0;
-
+    @include respond(tab-land){
+        width: 80%;
+    }
     @include respond(tab-port){
         padding: 5rem 0;
         max-width: 60rem;

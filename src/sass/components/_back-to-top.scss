@@ -1,10 +1,15 @@
 .back-to-top {
+
+    margin-top: 6rem;
+    & > a {
+        
     font-size: 1.2rem;
     color: $color-white;
-    margin-top: 6rem;
+    
     text-align: right;
     cursor: pointer;
     padding-left: 1rem;
+}
 
     &__arrow {
         margin-right: 1rem;

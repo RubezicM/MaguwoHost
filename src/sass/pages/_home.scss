@@ -32,19 +32,22 @@
 // Testimonial boxes
 
 .clients {
-    &__heading--sub {
-        
-    }
+ 
     &__logo-box{
-    text-align: center;
-    
+    display: flex;
+    justify-content: space-around;
+    @include respond(tab-port){
+        display: block;
+    }
     }
     &__image {
         &:not(:last-of-type){
-            margin-right: 2rem;
+            //margin-right: 2rem;
         }
         @include respond(tab-port){
-            width: 30%;
+
+            width: 32%;
+            height: auto;
         }
         
     }

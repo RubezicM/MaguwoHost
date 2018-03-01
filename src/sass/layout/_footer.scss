@@ -28,7 +28,7 @@
             &:focus {
                 color: $color-primary;
             }
-            border: 5px solid $color-white !important;
+            border: 4px solid $color-white !important;
             float: right;
             @include respond(tab-port){
                 top: 1.5rem;
@@ -43,15 +43,18 @@
         }
     }
     &__info--wrapper {
-        background-image: url('../../img/Vector Smart Object.png');
+        background-image: url('../img/Vector Smart Object.png');
         background-repeat: no-repeat;
-        background-position: left center;
+        //background-position: left center;
         position: relative;
         padding-bottom: 8.5rem;
         @include clearfix;
         @include respond(tab-port){
             padding: 0;
             background-image: none;
+        }
+        @include respond(tab-land){
+            background-size: 80%;
         }
     }
     &__nav {
@@ -77,12 +80,26 @@
             &:not(:last-of-type){
                 border-bottom: 1px solid rgba($color-white, .2);
             }
-           
+            &:last-child {
+                border-bottom: 1px solid transparent;
+            }
+           &:hover {
+            border-bottom: 1px solid rgba($color-secondary, .8);
+            //text-align: center;
+           }
+           &:hover .footer__nav-link {
+            transform: translateX(-10px);
+            color: $color-secondary;
+           }
         }
         &-link {
-            text-decoration: none;
             color: $color-white;
             font-size: 1.6rem;
+            text-align: center;
+            transition: all .3s;
+            position: relative;
+            display: inline-block;
+            backface-visibility: hidden;
         }
         &-social {
             display: flex;

@@ -3,7 +3,7 @@
        to right,
        rgba(0,0,0, 0.35) 0%,
        rgba(0,0,0, 0)100%),
-   url(../img/spash-1.jpg);
+   url(../img/splash-1-new.jpg);
    background-size: cover;
    background-repeat: no-repeat;
    height: 100vh;
@@ -11,11 +11,7 @@
    background-position: 100% 80%;
    position: relative;
    color: $color-primary;
-   scroll-behavior: smooth;
 
-   &:target {
-       transition: all .5s;
-   }
     @include respond(tab-port){
         background-position: 70% 80%;
     }
@@ -54,7 +50,7 @@
    }
 
    &__text-box{
-       width: 75%;
+       width: 77%;
        position: absolute;
        top: 50%;
        left: 50%;

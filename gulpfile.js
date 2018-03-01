@@ -46,11 +46,11 @@ gulp.task('sass',function(){
 // build styles
 gulp.task('styles', ['sass'],function() {
     return gulp.src('./src/css/**/*.css')
-        .pipe(autoprefixer('last 5 versions'))
-        .pipe(concat('main.css'))
-        .pipe(cleanCSS({ removeEmpty: true }))
+        //.pipe(autoprefixer('last 5 versions'))
+        //.pipe(concat('main.css'))
+        //.pipe(cleanCSS({ removeEmpty: true }))
         .pipe(gulp.dest('dist/css'))
-        .pipe(browserSync.stream())
+        //.pipe(browserSync.stream())
         .pipe(notify({ message: 'styles built' }));
 });
 
