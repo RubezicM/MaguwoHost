@@ -11,9 +11,10 @@
    background-position: 100% 80%;
    position: relative;
    color: $color-primary;
-
+   transition: margin .4s ease;
     @include respond(tab-port){
         background-position: 70% 80%;
+        //margin-top: 100px;
     }
     @include respond(phone){
 
@@ -23,6 +24,8 @@
     background-color: rgba(255,255,255,.95);
     @include respond(tab-port){
         position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
         z-index: 9999;
         padding: 2.5rem 0;

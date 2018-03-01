@@ -26,9 +26,18 @@ html {
 
 body {
     box-sizing: border-box;
+    transition: all .4s;
+    position: relative;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+    
+    // navigation functionality 
+    
+}
+
+.nav-open .header__top {
+    background-color: rgba($color-white,1); 
 }
