@@ -763,6 +763,10 @@ body {
         transition: all .4s .2s;
         -webkit-backface-visibility: hidden;
                 backface-visibility: hidden; } }
+    @media (min-width: 56.25em) {
+      .header__navigation-list {
+        position: relative;
+        top: 8px; } }
   .header__navigation-item {
     display: inline-block;
     margin-left: 2.5rem; }

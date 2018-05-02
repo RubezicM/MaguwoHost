@@ -10,6 +10,12 @@
             transition: all .4s .2s;
             backface-visibility: hidden;
         }
+
+        // Hack for the horizontal centered list, because i don't want to mess with the image.
+        @media (min-width: 56.25em){
+            position: relative;
+            top: 8px;
+        }
     }
     &-item {
         display: inline-block;
