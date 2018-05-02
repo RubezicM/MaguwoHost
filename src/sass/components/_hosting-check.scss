@@ -19,6 +19,10 @@
 
         &::-webkit-input-placeholder{
             color: $color-primary;
+            
+            @include respond(phone){
+                font-size: 1.4rem;
+            }
         }
 
 
@@ -53,6 +57,7 @@
         font-weight: bold;
         border-left: 1px solid $color-white; 
         padding: 1.5rem 3.75rem;
+        cursor: pointer;
         @include respond(tab-port){
             padding: 1.5rem 2.75rem;
         }

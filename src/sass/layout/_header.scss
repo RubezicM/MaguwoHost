@@ -14,10 +14,10 @@
    transition: margin .4s ease;
     @include respond(tab-port){
         background-position: 70% 80%;
-        //margin-top: 100px;
     }
     @include respond(phone){
-
+        height: 85vh;
+        margin-top: 73px;
     }
    &__top {
     padding: 3.5rem 2rem;
@@ -46,7 +46,9 @@
         font-weight: 700;
         border-left: 1px solid rgba($color-primary,.3);
     }
-
+    @include respond(tab-port){
+        margin: 0 120px 0 auto;
+    }
     @include respond(phone){
         display: none;
     }
@@ -63,12 +65,19 @@
         width: 100%;
         max-width: 60rem;
     }
+    @include respond(phone){
+        padding: 0 1rem;       
+    }
+       
        &--img {
         margin: 6rem auto;
         display: block;
         width: 9rem;
         @include respond(tab-port){
             width: 6rem;
+        }
+        @include respond(phone){
+            margin: 3.5rem auto;
         }
        }
    }

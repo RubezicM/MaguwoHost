@@ -106,12 +106,14 @@
             justify-content: space-around;
         }
         &-social--item {
+            transition: all .3s;
             cursor: pointer;
             position: relative;
             box-shadow: 0 1rem 1rem rgba($color-primary, .2);
+            backface-visibility: hidden;
             &:hover {
-                transform: translateY(-1px);
-                backface-visibility: hidden;
+                transform: translateY(-2px);
+                
             }
         }
     }

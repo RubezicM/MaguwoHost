@@ -5,15 +5,22 @@
         
     font-size: 1.2rem;
     color: $color-white;
-    
+    position: relative;
     text-align: right;
+    display: inline-block;
     cursor: pointer;
+    transition: transform .3s;
+    backface-visibility: hidden;
     padding-left: 1rem;
+    &:hover {
+        color: $color-secondary;
+        transform: translateY(-2px);
+    }
 }
 
     &__arrow {
         margin-right: 1rem;
-        display: inline-block;
+        box-shadow: 0 1rem 2rem rgba($color-primary, .2);
         font-size: 2rem;
     }
 }

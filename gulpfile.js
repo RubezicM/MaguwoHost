@@ -58,7 +58,7 @@ gulp.task('styles', ['sass'],function() {
 //build scripts
 gulp.task('scripts', function(){
     return gulp.src(paths.scripts.js)
-        .pipe(plumber())
+        //.pipe(plumber())
         .pipe(concat('main.min.js'))
         //.pipe(uglify())
         //.pipe(rename({suffix:".min"}))
@@ -77,7 +77,6 @@ gulp.task ('scripts:watch', function(){
 gulp.task('images', function() {
     return gulp.src(paths.images)
         .pipe(gulp.dest('dist/img'));
-
 });
 gulp.task('html',function(){
     return gulp.src(paths.html)

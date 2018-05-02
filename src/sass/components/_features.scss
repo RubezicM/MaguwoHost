@@ -6,7 +6,7 @@
     @include respond(tab-port){
         margin-top: 0;
         background-color: $color-white;
-        padding: 4rem 6.5rem;
+        padding: 4rem 3.5rem;
         box-shadow: 0 2.3rem 4rem rgba($color-primary, 0.05);
     }
     @include respond(phone){

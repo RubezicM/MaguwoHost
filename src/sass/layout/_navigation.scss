@@ -27,7 +27,11 @@
             padding: .4rem 0 .4rem 2rem;
             background-color: rgba($color-secondary, .8);
             &:hover {
-                //background-color: rgba($color-white,.9);
+                background-color: rgba($color-primary,.9);
+
+                & .header__navigation-link {
+                    color: $color-white;
+                }
             }
         }
     }
@@ -58,6 +62,9 @@
         &:hover {
             font-weight: 700;
             color: $color-secondary;
+            @include respond(tab-port){
+                color: $color-white;
+            }
         }
         @include respond(tab-port) {
             font-size: 2.3rem;
