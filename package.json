@@ -1,29 +1,39 @@
 {
-  "name": "myproject",
+  "name": "MaguwoHost",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "MaguwoHost theme",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp",
+    "build": "gulp build --prod",
+    "bundle": "gulp bundle --prod"
   },
-  "author": "",
+  "author": "Miljan Rubezic",
   "license": "ISC",
-  "dependencies": {
-    "gulp": "^3.9.1"
-  },
   "devDependencies": {
-    "browser-sync": "^2.18.13",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-clean-css": "^3.9.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-html-replace": "^1.6.2",
-    "gulp-notify": "^3.0.0",
-    "gulp-plumber": "^1.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^3.0.0",
-    "gulp-useref": "^3.1.2",
-    "jquery": "^3.3.1"
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/register": "^7.6.2",
+    "autoprefixer": "^9.6.5",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "expose-loader": "^0.7.5",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^6.1.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-zip": "^5.0.1",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.12.0",
+    "vinyl-named": "^1.1.0",
+    "webpack-stream": "^5.2.1",
+    "yargs": "^14.2.0"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
   }
 }
